@@ -1,7 +1,4 @@
-//CALCOLO PREZZO BIGLIETTO
 
-
-// BOTTONI MILESTONE 1
 
 const button = document.querySelector('.button')
 
@@ -14,15 +11,15 @@ button.addEventListener('click', function(){
 
     if (eta <= 17) {
         totale -= totale * 20 / 100;
-        document.getElementById(`resume`).innerText = ` ${nome} di anni ${eta} Il suo biglietto della distanza di ${km}km ridotto ha il costo di`
+        document.getElementById(`resume`).innerText = ` ${nome} di anni ${eta} Il suo biglietto della distanza di ${km}km ridotto ha il costo di €`
         
     } 
     else if (eta >= 65) {
         totale -= totale * 40 / 100;
-        document.getElementById(`resume`).innerText = ` ${nome} di anni ${eta} Il suo biglietto della distanza di ${km}km scontato ha il costo di`
+        document.getElementById(`resume`).innerText = ` ${nome} di anni ${eta} Il suo biglietto della distanza di ${km}km scontato ha il costo di €`
     } 
     else {
-        document.getElementById(`resume`).innerText = ` ${nome} di anni ${eta} Il suo biglietto della distanza di ${km}km standard ha il costo di`
+        document.getElementById(`resume`).innerText = ` ${nome} di anni ${eta} Il suo biglietto della distanza di ${km}km standard ha il costo di €`
     }
 
     totale = totale.toFixed(2);
