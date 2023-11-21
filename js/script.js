@@ -25,9 +25,9 @@ button.addEventListener('click', function(){
         document.getElementById(`resume`).innerText = ` ${nome} di anni ${eta} Il suo biglietto della distanza di ${km}km standard ha il costo di`
     }
 
-    let n = totale.toFixed(2);
+    totale.toFixed(2);
     document.getElementById(`price`).innerHTML = totale;
-    console.log(n)
+    console.log(totale)
     
      
 })
